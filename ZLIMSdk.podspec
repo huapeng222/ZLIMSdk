@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ZLIMLib'
+  s.name             = 'ZLIMSdk'
   s.version          = '0.0.1'
   s.summary          = '致联软件消息sdk'
 
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 致联软件消息sdk
                        DESC
 
-  s.homepage         = 'https://code.aliyun.com/zhi-lian-ios/zhi-lian-imsdk-pod'
+  s.homepage         = 'https://github.com/huapeng222/ZLIMSdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'huazhaopeng' => 'huazhaopeng@zhi-lian.com.cn' }
-  s.source           = { :git => 'https://code.aliyun.com/zhi-lian-ios/zhi-lian-imsdk-pod.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/huapeng222/ZLIMSdk.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.vendored_frameworks='ZLSdk.framework'
