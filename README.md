@@ -22,7 +22,7 @@ pod 'ZLIMSdk'
 
 ## Author
 
-huapeng222, zhaopeng.hua@five-star.cn
+huapeng222, huazhaopeng@zhi-lian.com.cn
 
 ## License
 
