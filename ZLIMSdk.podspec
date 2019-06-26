@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ZLIMSdk'
+  s.name             = 'ZLIMLib'
   s.version          = '0.0.1'
   s.summary          = '致联软件消息sdk'
 
