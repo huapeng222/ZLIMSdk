@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.vendored_frameworks='ZLSdk.framework'
   s.dependency 'Protobuf', '~> 3.6.1'
-  s.dependency 'MMKV', '~> 1.0.12'
+  #s.dependency 'MMKV', '~> 1.0.12'
   s.dependency 'Masonry','~> 1.1.0'
   s.dependency 'WCDB','~> 1.0.7.5'
   #s.dependency 'TZImagePickerController','~> 3.1.9'
