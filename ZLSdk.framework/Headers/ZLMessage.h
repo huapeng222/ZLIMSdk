@@ -30,7 +30,7 @@
 @property(nonatomic,copy)NSString *sendName;///<发送人名字
 
 
-@property(nonatomic,assign)NSInteger sendState;///<发送状态,0成功,1发送中,2发送失败
+@property(nonatomic,assign)NSInteger sendState;///<发送状态,0成功,1发送中,2发送失败,3,刚刚发送出来,但没有发送成功
 
 @property(nonatomic,assign)NSTimeInterval time;///<消息时间戳
 

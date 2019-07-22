@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ZLMessage.h"
 
-typedef void (^SendMessageText)(NSString * text);///<发送消息
+typedef ZLMessage * (^SendMessageText)(NSString * text);///<发送消息
 typedef void (^SendMessageAudio)(NSString * audioPath,NSString *audioDuration,NSString *audioName);///<发送语音消息
 typedef void (^ZLChatHeaderClick)(ZLMessage * msg);///<头像点击
 typedef void (^ZLChatHeaderLongPress)(ZLMessage * msg);///<头像长按
