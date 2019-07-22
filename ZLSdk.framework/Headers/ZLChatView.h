@@ -13,8 +13,11 @@ typedef void (^SendMessageText)(NSString * text);///<发送消息
 typedef void (^SendMessageAudio)(NSString * audioPath,NSString *audioDuration,NSString *audioName);///<发送语音消息
 typedef void (^ZLChatHeaderClick)(ZLMessage * msg);///<头像点击
 typedef void (^ZLChatHeaderLongPress)(ZLMessage * msg);///<头像长按
+typedef void (^ZLBubbleViewLongPress)(ZLMessage *msg,UIView *contentView);///<气泡长按
+typedef void (^ZLDidClickLinkWithMoreQuestion)(NSString *question,NSString*replay);///<更多问题点击
 @protocol ZLChatViewDataSource <NSObject>
 
+@optional
 /// 如果需要自定义cell,使用该方法,如果调用该方法,并且返回不为空,就是用sdk内部的方法绘制
 /// @param indexPath 行数
 /// @param tableView 聊天列表
@@ -30,6 +33,7 @@ typedef void (^ZLChatHeaderLongPress)(ZLMessage * msg);///<头像长按
 /// 下拉
 /// @param refreshControl 上层需要提供需要插入到上方的新数据数组
 - (NSArray *)downRefreshChatList:(UIRefreshControl *)refreshControl;
+
 @end
 
 @interface ZLChatView : UIView
@@ -40,6 +44,8 @@ typedef void (^ZLChatHeaderLongPress)(ZLMessage * msg);///<头像长按
 @property(nonatomic,copy)SendMessageAudio sendMessageAudio;///<语音消息录制完成
 @property(nonatomic,copy)ZLChatHeaderClick chatHeaderClick;///<头像点击
 @property(nonatomic,copy)ZLChatHeaderLongPress chatHeaderLongPress;///<头像长按
+@property(nonatomic,copy)ZLBubbleViewLongPress chatBubbleViewLongPress;///<气泡长按
+@property(nonatomic,copy)ZLDidClickLinkWithMoreQuestion didClickLinkWithMoreQuestion;///<更多问题回复
 #pragma mark - 列表
 /// 时间显示间隔(分钟数),为0 不显示,默认为5分钟
 @property(nonatomic,assign)NSInteger showTime_minutes;

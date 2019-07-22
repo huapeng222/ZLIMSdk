@@ -1,6 +1,6 @@
 //
 //  ZLIMManager.h
-//  MarsDemo
+//  Mars
 //
 //  Created by hua on 2019/5/21.
 //  Copyright © 2019 hzp. All rights reserved.
@@ -11,7 +11,12 @@
 #import "ZLIMHeader.h"
 #import "ZLMessage.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef void (^ReceivedMessage)(id value,CmIdHeader header);///<接收到系统推送
+
+
+
 @interface ZLIMManager : NSObject
 
 @property(copy,nonatomic)ReceivedMessage receivedMessage;///<接收到系统推送
@@ -20,7 +25,7 @@ typedef void (^ReceivedMessage)(id value,CmIdHeader header);///<接收到系统�
  */
 + (instancetype)sharedInstance;
 
-- (void)connectAndLoginIM:(nonnull NSDictionary *)parame completion:(void(^)(id value,NSError *error))completion;
+- (void)connectAndLoginIMWithCorpId:(NSString *)corpId robots:(NSArray *)robots userId:(NSString *)userId completion:(void(^)(id value,NSError *error))completion;
 
 - (void)sendBotMessage:(ZLMessage *)msg completion:(void(^)(id value,NSError *error))completion;
 
@@ -45,3 +50,5 @@ typedef void (^ReceivedMessage)(id value,CmIdHeader header);///<接收到系统�
 #pragma mark - 断开连接
 - (void)disconnect;
 @end
+
+NS_ASSUME_NONNULL_END

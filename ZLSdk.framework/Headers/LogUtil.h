@@ -12,7 +12,7 @@
 
 //
 //  LogUtil.h
-//  iOSDemo
+//  iOS
 //
 //  Created by caoshaokun on 16/11/30.
 //  Copyright © 2016年 caoshaokun. All rights reserved.

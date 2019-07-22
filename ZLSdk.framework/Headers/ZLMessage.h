@@ -34,7 +34,22 @@
 
 @property(nonatomic,assign)NSTimeInterval time;///<消息时间戳
 
+@property(nonatomic,copy)NSString *maybeHits;///<可能命中的问题
 
+@property(nonatomic,copy)NSString *relatedKnowledge;///<可能命中的问题
+
+@property(nonatomic,copy)NSString *replay;
 
 + (NSString *)createBotId:(NSString *)botId;
+
+
+/**
+ 是否是可能问题
+ */
+- (BOOL)isMaybeMsg;
+
+/**
+ 是否是相关问题
+ */
+- (BOOL)isRelatedKnowledgeMsg;
 @end
