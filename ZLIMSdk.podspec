@@ -34,9 +34,9 @@ Pod::Spec.new do |s|
   s.dependency 'WCDB','~> 1.0.7.5'
   #s.dependency 'TZImagePickerController','~> 3.1.9'
   s.dependency 'SDWebImage','~> 4.4.5'
-  s.dependency 'MLLabel','~> 1.10.5'
+  #s.dependency 'MLLabel','~> 1.10.5'
   s.dependency 'MBProgressHUD','~> 1.1.0'
-  s.dependency 'AFNetworking', '~> 3.2.1'
+  #s.dependency 'AFNetworking', '~> 3.2.1'
 
   # s.source_files = 'ZLIMSdk/Classes/**/*'
   
