@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZLIMBaseViewController.h"
 
-@interface ZLChatViewController : UIViewController
+
+@interface ZLChatViewController : ZLIMBaseViewController
 @property(nonatomic,copy)NSString *groupId;///<回话id
 
 /// 聊天背景图片

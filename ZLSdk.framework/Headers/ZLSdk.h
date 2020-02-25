@@ -21,5 +21,8 @@ FOUNDATION_EXPORT const unsigned char ZLSdkVersionString[];
 #import "ZLMessage.h"
 #import "ZLChatView.h"
 #import "ZLChatViewController.h"
+#import "ZLIMBaseViewController.h"
 
 #import "ZLActionSheet.h"
+
+

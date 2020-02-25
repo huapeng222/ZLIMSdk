@@ -40,6 +40,8 @@
 
 @property(nonatomic,copy)NSString *replay;
 
+@property(nonatomic,copy)NSString *advice;
+
 + (NSString *)createBotId:(NSString *)botId;
 
 

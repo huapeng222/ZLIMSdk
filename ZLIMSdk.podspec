@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZLIMSdk'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = '致联软件消息sdk'
 
 # This description is used to generate tags and improve search results.

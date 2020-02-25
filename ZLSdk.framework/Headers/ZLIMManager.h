@@ -11,8 +11,6 @@
 #import "ZLIMHeader.h"
 #import "ZLMessage.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 typedef void (^ReceivedMessage)(id value,CmIdHeader header);///<接收到系统推送
 
 
@@ -47,8 +45,21 @@ typedef void (^ReceivedMessage)(id value,CmIdHeader header);///<接收到系统�
 /// @param groupId 聊天id
 - (UIViewController *)openChatVC:(UIViewController *)vc groupId:(NSString *)groupId;
 
+
+/**
+ 获取欢迎语
+
+ @param botId 机器人id
+ @param userId 用户id
+ */
+- (void)getWelcomeMessage:(NSString *)botId userId:(NSString *)userId;
+
+
+/**
+ 清空本地存储的消息
+ */
+- (void)deleteAllMsg;
 #pragma mark - 断开连接
 - (void)disconnect;
 @end
 
-NS_ASSUME_NONNULL_END
